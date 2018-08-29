@@ -1,5 +1,6 @@
 .websitetest #websitecheck {
 	box-sizing: border-box;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 20px;
 	font-style: normal
 	border-image-outset: 0;
@@ -51,7 +52,7 @@
 	margin-bottom: 1.5em
 }
 
-input {
+.websitetest input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
