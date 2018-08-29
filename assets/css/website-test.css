@@ -14,7 +14,7 @@
 	letter-spacing: normal;
 	line-height: 24px;
 	text-alignleftvertical-align: middle;
-	width: 66.66667%;
+	width: 100%;
 	-moz-border-left-colors: none;
 	-moz-border-top-colors: none;
 	background: #fff;
@@ -53,6 +53,7 @@
 }
 
 .websitetest input {
+    width: 100%
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
