@@ -5565,6 +5565,12 @@
             }
         }
     }), window.testtools = [{
+        id: "default",
+        type: "performance",
+        name: "Wähle einen der nützlichen Website Tests aus.",
+        desc: "Der Google PageSpeed Test wird per default ausgeführt",
+        testurl: "https://developers.google.com/speed/pagespeed/insights/?url={{escaped_url}}"
+    }, {
         id: "google_pagespeed_business",
         type: "performance",
         name: "Google: PageSpeed für Unternehmen",
