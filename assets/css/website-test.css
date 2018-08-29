@@ -237,7 +237,6 @@
 }
 
 .selectize-dropdown,
-.selectize-input,
 .selectize-input input {
 	color: #303030;
 	font-family: inherit;
@@ -313,7 +312,7 @@
 	border: 1px solid #00578d
 }
 
-.selectize-control.multi .selectize-input.disabled>div,
+.selectize-input.disabled>div,
 .selectize-control.multi .selectize-input.disabled>div.active {
 	color: #fff;
 	background: #d2d2d2;
@@ -427,12 +426,10 @@
 	max-height: 200px
 }
 
-.selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
 	cursor: pointer
 }
 
-.selectize-control.single .selectize-input.input-active,
 .selectize-control.single .selectize-input.input-active input {
 	cursor: text
 }
@@ -484,12 +481,8 @@
 	box-shadow: none
 }
 
-.selectize-control.multi .selectize-input.disabled [data-value],
 .selectize-control.multi .selectize-input.disabled [data-value] .remove {
 	border-color: #e6e6e6
-}
-
-.selectize-control.multi .selectize-input.disabled [data-value] .remove {
 	background: 0 0
 }
 
