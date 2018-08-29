@@ -14,7 +14,7 @@
 	letter-spacing: normal;
 	line-height: 24px;
 	text-alignleftvertical-align: middle;
-	width: 66.66667%;
+	width: 100%;
 	-moz-border-left-colors: none;
 	-moz-border-top-colors: none;
 	background: #fff;
@@ -53,7 +53,7 @@
 }
 
 .websitetest input {
-    width: 66.66667%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -73,7 +73,7 @@
 	display: block;
 	opacity: .5;
 	white-space: nowrap;
-	width: 66.66667%;
+	width: 100%;
 	text-overflow: ellipsis;
 	overflow: hidden
 }
@@ -255,7 +255,7 @@
 .selectize-input {
 	border: 1px solid #d0d0d0;
 	padding: 8px;
-	width: 66.66667%;
+	width: 100%;
 	overflow: hidden;
 	z-index: 1;
 	box-sizing: border-box;
@@ -324,7 +324,7 @@
 	padding: 0!important;
 	min-height: 0!important;
 	max-height: none!important;
-	max-width: 66.66667%!important;
+	max-width: 100%!important;
 	margin: 0 1px!important;
 	text-indent: 0!important;
 	border: 0!important;
