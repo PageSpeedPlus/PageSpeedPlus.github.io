@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Website Audit - Performance, Security & SEO - PageSpeed.plus</title>
+    <meta name="description" content="Hand erlesene Sammlung von den besten Website Tests um Ihre Webseite in allen Bereichen an die Spitze zu pushen.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/w3.css">
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 32px">
+  <h1 class="w3-margin w3-jumbo">Website Test Tools</h1>
+           <div class="search">
+            <br>
+            <form class="w3-center" action="https://testmysite.thinkwithgoogle.com/" method="get" target="_blank" id="test" _lpchecked="1">
+                <div class="q">
+                    <input name="url" placeholder="https://" id="websitecheck" data-err-none="Geben Sie eine Website-URL ein ..." data-err-invalid="Die URL der Website wurde nicht erkannt." required="" type="url">
+                    <div style="padding-top:0.5em;">
+                        <select id="testtools" placeholder="Wähle einen Test..." tabindex="-1" style="display: none;" class="selectized" required="">
+                                <option value="google_pagespeed" selected="selected">Google PageSpeed Score (Professional)</option>
+                            </select>
+                        <div class="selectize-control single plugin-optgroup_columns">
+                            <div class="selectize-input items required has-options full has-items">
+                                <div class="item" data-value="google_pagespeed">Google PageSpeed Score (Professional)</div>
+                                <input type="text" autocomplete="off" tabindex="" id="testtools-selectized" style="width: 4px; opacity: 0; position: absolute; left: -10000px;">
+                            </div>
+                            <div class="selectize-dropdown single plugin-optgroup_columns" style="display: none; width: 1200px; top: 36px; left: 0px; visibility: visible;">
+                                <div class="selectize-dropdown-content">
+                                    <div class="optgroup" data-group="performance" style="height: 674px; width: 394px;">
+                                        <div class="optgroup-header">Performance</div>
+                                        <div data-selectable="" data-value="google_pagespeed_business">
+                                            <span class="title"><span class="name">Google: PageSpeed für Unternehmen&nbsp;&nbsp;<span   class="icon-google-plus" style="color:blue;" title="Google Test"></span>&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Google PageSpeed Test mit Tipps und Informationen für Unternehmer.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="google_pagespeed" class="selected active">
+                                            <span class="title"><span class="name">Google: PageSpeed&nbsp;&nbsp;<span class="icon-google-plus" style="color:blue;" title="Google Test"></span>&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Der Google PageSpeed Test zeigt die technische Qualität einer Webseite.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="webpagetest">
+                                            <span class="title"><span class="name">WebPageTest.org</span></span>
+                                            <div class="description">Ausführliche Performance Analyse mit induviduellen Standorten, Geräten sowie Internetanbindungen.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="neustardns">
+                                            <span class="title"><span class="name">UltraTools: DNS Speed Test&nbsp;&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span></span>
+                                            <div class="description">Wertvolle Performance-Informationen für jede Ebene einer DNS-Abfrage zur Leistungsbewertung und Fehlerbehebung.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="pingdom">
+                                            <span class="title"><span class="name">Pingdom Tools</span></span>
+                                            <div class="description">Zeigt Performance Analyse, via diverser Standorten, aller geladenen Ressourcen im Wasserfalldiagramm.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="gtmetrix">
+                                            <span class="title"><span class="name">GTMetrix</span></span>
+                                            <div class="description">Testet eine grosse Anzahl diverser technischer Performance-Faktoren.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="redbot">
+                                            <span class="title"><span class="name">REDbot</span></span>
+                                            <div class="description">Sicherheits- und Leistungstest auf Basis von Server-Headern.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="securiperf">
+                                            <span class="title"><span class="name">Sucuri: International Load Time Tester</span></span>
+                                            <div class="description">Internationaler Geschwindigkeitstest via diverser Standorte rund um den Globus.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="keycdn">
+                                            <span class="title"><span class="name">KeyCDN: International Speed Test</span></span>
+                                            <div class="description">Testet die Ladezeit einer Webseite von mehreren Standorten auf der Welt aus.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="uptrends">
+                                            <span class="title"><span class="name">Uptrends: International Speed Test</span></span>
+                                            <div class="description">Performance-Test via induviduellen Standorten und Geräten.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="dotcomtools">
+                                            <span class="title"><span class="name">Dotcom Tools: International Speed Test</span></span>
+                                            <div class="description">Geschwindigkeitstest mit echten Browsern von mehreren internationalen Standorten aus.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="yellowlab">
+                                            <span class="title"><span class="name">YellowLab Tools</span></span>
+                                            <div class="description">Ausführlicher Skript Performance-Test von JavaScript und CSS.</div>
+                                        </div>
+                                    </div>
+                                    <div class="optgroup" data-group="seo" style="height: 674px; width: 394px;">
+                                        <div class="optgroup-header">SEO</div>
+                                        <div data-selectable="" data-value="google_mobileseo">
+                                            <span class="title"><span class="name">Google Mobile SEO&nbsp;&nbsp;<span class="icon-google-plus" style="color:blue;" title="Google Test"></span>&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for mobile indexation problems in Google.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="moz_crawltest">
+                                            <span class="title"><span class="name">Moz Pro: Crawl Test&nbsp;&nbsp;<span class="icon-credit-card" style="color:green;" title="Paid Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for technical SEO problems.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="hubspot">
+                                            <span class="title"><span class="name">Hubspot: Website Grader</span></span>
+                                            <div class="description">Free general SEO analysis.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="alexa">
+                                            <span class="title"><span class="name">Alexa Traffic Rank</span></span>
+                                            <div class="description">World ranking of websites.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="dareboost">
+                                            <span class="title"><span class="name">DareBoost SEO Quality &amp; Performance&nbsp;&nbsp;<span class="icon-credit-card" style="color:green;" title="Paid Test"></span></span>
+                                            </span>
+                                            <div class="description">Complete test for performance, security and SEO.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="nibbler">
+                                            <span class="title"><span class="name">Nibbler SEO report</span></span>
+                                            <div class="description">Comprehensive report for website improvement.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="seo_report_card">
+                                            <span class="title"><span class="name">UpCity SEO Report Card</span></span>
+                                            <div class="description">Free SEO competition analysis.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="woorank">
+                                            <span class="title"><span class="name">WooRank&nbsp;&nbsp;<span class="icon-credit-card" style="color:green;" title="Paid Test"></span></span>
+                                            </span>
+                                            <div class="description">Deep SEO analysis.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="removeem">
+                                            <span class="title"><span class="name">Remove'em Backlink Removal&nbsp;&nbsp;<span class="icon-credit-card" style="color:green;" title="Paid Test"></span></span>
+                                            </span>
+                                            <div class="description">Tool for removing damaging links.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="pagelocity">
+                                            <span class="title"><span class="name">Pagelocity Performance &amp; SEO Analysis</span></span>
+                                            <div class="description">Test for performance issues related to SEO.</div>
+                                        </div>
+                                    </div>
+                                    <div class="optgroup" data-group="security" style="height: 674px; width: 393px;">
+                                        <div class="optgroup-header">Security</div>
+                                        <div data-selectable="" data-value="google_malware">
+                                            <span class="title"><span class="name">Google Malware&nbsp;&nbsp;<span class="icon-google-plus" style="color:blue;" title="Google Test"></span>&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for Google Malware listing (viruses, hosting-hacks etc.).</div>
+                                        </div>
+                                        <div data-selectable="" data-value="ssllabs">
+                                            <span class="title"><span class="name">SSL Labs&nbsp;&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for SSL performance and security problems.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="intodns">
+                                            <span class="title"><span class="name">Into DNS&nbsp;&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for DNS problems.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="securi">
+                                            <span class="title"><span class="name">Securi Malware and Security Scanner</span></span>
+                                            <div class="description">Comprehensive security and malware scan with blacklist check.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="securityheaders">
+                                            <span class="title"><span class="name">SecurityHeaders.io: Server Header Security Analysis&nbsp;&nbsp;<span class="icon-warning" style="color:red;" title="Essential Test"></span></span>
+                                            </span>
+                                            <div class="description">Test for website security based on HTTP headers.<br><strong>Tip:</strong> HTTP headers are visible for Google.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="htmlvalidator">
+                                            <span class="title"><span class="name">HTML Validator</span></span>
+                                            <div class="description">Test for HTML quality.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="cspvalidator">
+                                            <span class="title"><span class="name">Content Security Policy (CSP) Validator</span></span>
+                                            <div class="description">Test for Content Security Policy (CSP).</div>
+                                        </div>
+                                        <div data-selectable="" data-value="norton">
+                                            <span class="title"><span class="name">Norton Safe Web Report</span></span>
+                                            <div class="description">Website reputation check from Symantec (Norton).</div>
+                                        </div>
+                                        <div data-selectable="" data-value="htbridge">
+                                            <span class="title"><span class="name">High-Tech Bridge Web Server Security Test</span></span>
+                                            <div class="description">Free web server (hosting) security analysis.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="mxtoolboxmx">
+                                            <span class="title"><span class="name">MX Toolbox: mailserver DNS test</span></span>
+                                            <div class="description">Test of the email server (click on <strong>SMTP Test</strong> after completion).</div>
+                                        </div>
+                                        <div data-selectable="" data-value="mxtoolboxblacklist">
+                                            <span class="title"><span class="name">MX Toolbox: blacklist check</span></span>
+                                            <div class="description">Verify if the server is blacklisted on email blacklists.</div>
+                                        </div>
+                                        <div data-selectable="" data-value="webinspector">
+                                            <span class="title"><span class="name">Web Inspector Malware &amp; Security Scan</span></span>
+                                            <div class="description">Test for security vulnerabilities, malware, viruses and blacklist.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" type="submit">Start Test</button>
+            </form>
+        </div>
+</header>
+
+<div class="w3-container">
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+<!-- First Grid Ende-->
+  </div>
+  
+  
+  <div class="w3-container">
+    <div class="w3-row-padding w3-center w3-margin-top">
+  
+      <div class="w3-quarter">
+        <div class="w3-card w3-container" style="min-height:400px">
+        <h3>Responsive</h3><br>
+        <i class="fa fa-desktop w3-text-red w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Built-in responsiveness</p>
+        <p>Mobile first fluid grid</p>
+        <p>Fits any screen sizes</p>
+        <p>PC Tablet and Mobile</p>
+        </div>
+      </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-container" style="min-height:400px">
+      <h3>Standard CSS</h3><br>
+      <i class="fa fa-css3 w3-text-red w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Standard CSS only</p>
+      <p>Easy to learn</p>
+      <p>No need for jQuery</p>
+      <p>No JavaScript library</p>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-container" style="min-height:400px">
+      <h3>Design</h3><br>
+      <i class="fa fa-diamond w3-text-red w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Paper like design</p>
+      <p>Bold colors and shadows</p>
+      <p>Equal across platforms</p>
+      <p>Equal across devices</p>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-container" style="min-height:400px">
+      <h3>Standard CSS</h3><br>
+      <i class="fa fa-css3 w3-text-red w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+      <p>Standard CSS only</p>
+      <p>Easy to learn</p>
+      <p>No need for jQuery</p>
+      <p>No JavaScript library</p>
+      </div>
+    </div>
+  
+    </div>
+  </div>
+
+  
+  
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+<!-- Second Grid Ende -->
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+  
+<script src="assets/js/tests-de.js"></script>
+
+</body>
+</html>
