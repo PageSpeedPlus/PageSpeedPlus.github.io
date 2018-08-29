@@ -157,7 +157,7 @@
 .selectize-dropdown.plugin-optgroup_columns .optgroup {
 	border-right: 1px solid #f2f2f2;
 	border-top: 0 none;
-	float: left;
+	float: center;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box
