@@ -53,7 +53,7 @@
 }
 
 .websitetest input {
-    width: 100%;
+    width: 66.66667%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -73,7 +73,7 @@
 	display: block;
 	opacity: .5;
 	white-space: nowrap;
-	width: 100%;
+	width: 66.66667%;
 	text-overflow: ellipsis;
 	overflow: hidden
 }
