@@ -76,7 +76,8 @@
 	white-space: nowrap;
 	width: 66.66667%;
 	text-overflow: ellipsis;
-	overflow: hidden
+	overflow: hidden;
+	text-align: center;
 }
 
 .selectize-dropdown.plugin-optgroup_columns .optgroup .optgroup-header {
